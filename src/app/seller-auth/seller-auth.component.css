@@ -1,0 +1,21 @@
+.inp {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+button {
+    width: 176px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.sign-up, .sign-In {
+margin-left: 500px;
+border: 1px solid grey;
+margin-right: 600px;
+margin-top: 30px;
+}
+.openSignUp {
+    cursor: pointer;
+}

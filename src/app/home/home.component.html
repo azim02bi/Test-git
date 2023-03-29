@@ -1,0 +1,47 @@
+<p-carousel [value]="data" styleClass="custom-carousel" [numVisible]="1" [numScroll]="1" [autoplayInterval]="3000">
+    <ng-template pTemplate="header">
+    </ng-template>
+    <ng-template let-data pTemplate="item">
+        <div class="product-item">
+            <div class="product-item-content">
+                <div class="p-mb-3">
+                </div>
+                <img style="width: 200px;" src="{{data.image}}"> 
+                <h2>{{data.price | currency:'CAD':'symbol-narrow'}}</h2>
+                <h2></h2>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
+<div class="card">
+    <p-table [value]="productList" [paginator]="true" [rows]="10" [showCurrentPageReport]="true" [tableStyle]="{'min-width': '50rem'}"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width:25%">Image</th>
+                <th style="width:25%">productname</th>
+                <th style="width:25%">Price</th>
+                <th style="width:25%">color</th>
+                <th style="width:25%">description</th>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-productList>
+            <tr>
+                <td><a style="cursor: pointer;" (click)="detailPage(productList.id)"><img style="width: 100px;" src="{{productList.image}}"></a></td>
+                <td>{{productList.productname}}</td>
+                <td>{{productList.price | currency:'USD':'symbol-narrow'}}</td>
+                <td>{{productList.color}}</td>
+                <td>{{productList.description}}</td>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="paginatorleft">
+            <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+        </ng-template>
+        <ng-template pTemplate="paginatorright">
+            <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+        </ng-template>
+    </p-table>
+</div>

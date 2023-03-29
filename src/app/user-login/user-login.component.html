@@ -1,0 +1,25 @@
+<div *ngIf="islogin" class="box-container">
+    <form>
+        <label for="name">Email:<span  style="color: red;">*</span></label>
+        <input type="email" placeholder="Enter your email" pInputText />
+        <label for="name">Password:<span style="color: red;">*</span></label>
+        <input class="inp" placeholder="Enter your password" type="password" name="password" pInputText>
+
+        <button pButton pRipple type="button" style="width: 100%; margin-bottom: 10px;" label="Login" class="p-button-raised"></button>
+        <button pButton pRipple type="button" style="width: 100%;" label="Sign Up" class="p-button-raised" (click)="signUp()"></button>
+    </form>
+</div>
+
+
+<div *ngIf="!islogin" class="box-container">
+    <form #register="ngForm">
+        <label for="name">Name:<span  style="color: red;">*</span></label>
+        <input type="text" name="name" ngModel placeholder="Enter your Name" pInputText />
+        <label for="name">Email:<span  style="color: red;">*</span></label>
+        <input type="text" name="email" ngModel placeholder="Enter your email" pInputText />
+        <label for="name">Password:<span  style="color: red;">*</span></label>
+        <input type="text" name="password" ngModel placeholder="Enter your Password" pInputText />
+        <button pButton pRipple type="button" style="width: 100%; margin-top: 10px;" label="Register" class="p-button-raised" (click)="userRegister(register.value)"></button>
+        <button pButton pRipple type="button" style="width: 100%; margin-top: 10px;" label="Login" class="p-button-raised" (click)="gotologin()"></button>
+    </form>
+</div>

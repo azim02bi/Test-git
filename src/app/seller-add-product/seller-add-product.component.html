@@ -1,0 +1,52 @@
+<div class="card">
+    <h1 style="padding-left: 10px; color: green;">{{success}}</h1>
+   <form #addProduct="ngForm" (ngSubmit)="addSellerProduct(addProduct.value)">
+
+       <div class="p-grid p-fluid">
+           <div class="p-col-12 p-md-4">
+               <div class="p-inputgroup">
+                   <span class="p-inputgroup-addon"><i class="pi pi-box"></i></span>
+                   <input type="text" ngModel name="productname" style="width: 40px;" pInputText placeholder="ProductName">
+                </div>
+            </div>
+        </div>
+        
+        <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-dollar"></i></span>
+                <input type="number" ngModel name="price" style="width: 40px;" pInputText placeholder="price">
+            </div>
+        </div>
+    </div>
+    
+    <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-circle-fill"></i></span>
+                <input type="text" ngModel name="color" style="width: 40px;" pInputText placeholder="Colour">
+            </div>
+        </div>
+    </div>
+    <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-text"></i></span>
+                <textarea ngModel name="description">
+                    Enter Product description here
+                </textarea>
+            </div>
+        </div>
+    </div>
+    <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-arrows-v"></i></span>
+                <input type="text" ngModel name="image" style="width: 40px;" pInputText placeholder="Imageurl">
+            </div>
+        </div>
+    </div>
+    <button class="p-inputgroup" pButton type="button" label="Add Product" icon="pi pi-save" (click)="addSellerProduct(addProduct.value)" ></button>
+</form>
+    
+</div>

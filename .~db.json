@@ -1,0 +1,160 @@
+{
+  "signUpSeller": [
+    {
+      "id": 1,
+      "name": "anil",
+      "password": "anil123",
+      "email": "anil123@gmail.com"
+    },
+    {
+      "name": "kumar",
+      "password": "kumar123",
+      "email": "kumar4@GMAIL.COM",
+      "id": 2
+    },
+    {
+      "name": "salina",
+      "password": "asas",
+      "email": "salina@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 6
+    }
+  ],
+  "AddSellarProducts": [
+    {
+      "productname": "i phone 11",
+      "price": "40000",
+      "color": "red",
+      "description": "yuahbxs",
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71ZDY57yTQL._SL1500_.jpg",
+      "id": 2
+    },
+    {
+      "productname": "Iphone 0101",
+      "price": "90006",
+      "color": "golden",
+      "description": "this is golden iphone 14 pro max",
+      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202209/iphone14promax_1.jpg?VersionId=TF0EiCCvxCMCnvSN4R5Z2FfnkoH.u51l&size=690:388",
+      "id": 6
+    },
+    {
+      "productname": "Refrigretor",
+      "price": 25000,
+      "color": "black",
+      "description": "This is refregretor",
+      "image": "https://whirlpoolindia.vtexassets.com/arquivos/ids/156095/open__1200x1200_1_1.jpg?v=637774177877230000",
+      "id": 7
+    },
+    {
+      "productname": "Cooler",
+      "price": 40000,
+      "color": "black",
+      "description": "This is refregretor",
+      "image": "https://rukminim1.flixcart.com/image/416/416/kr6oeq80/air-cooler/m/p/1/air-coolers-a-general-18-honey-comb-pads-380-watt-air-cooler-140-original-imag5f8z5sck8khs.jpeg?q=70",
+      "id": 8
+    },
+    {
+      "productname": "electric Iron",
+      "price": 3000,
+      "color": "white",
+      "description": "This is electric Iron",
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81GbMUcpg3L._SL1500_.jpg",
+      "id": 9
+    },
+    {
+      "productname": "Wallet for Men",
+      "price": 2000,
+      "color": "black",
+      "description": "this is wallet for men",
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81WIcyHQ7oL._SL1500_.jpg",
+      "id": 10
+    },
+    {
+      "productname": "Watch for Men",
+      "price": 4000,
+      "color": "white",
+      "description": "this is watch for men",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdf9GQAeCWKxE8xMVWY3ETzzBMa0JnB2EZw&usqp=CAU",
+      "id": 11
+    }
+  ],
+  "userRegistration": [
+    {
+      "id": 1,
+      "username": "vinay",
+      "email": "vinay@gmail.com",
+      "password": "vanay@212"
+    },
+    {
+      "name": "dfghjk",
+      "email": "asdf@gmail.com",
+      "password": "asdfghgfd",
+      "id": 7
+    },
+    {
+      "name": "karim",
+      "email": "karim@gmail.com",
+      "password": "askih",
+      "id": 8
+    },
+    {
+      "name": "karim",
+      "email": "karim@gmail.com",
+      "password": "askih",
+      "id": 9
+    },
+    {
+      "name": "azim",
+      "email": "salina@gmail.com",
+      "password": "sdfghjkl",
+      "id": 10
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 11
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 12
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 13
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 14
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 15
+    }
+  ]
+}

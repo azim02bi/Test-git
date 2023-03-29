@@ -1,0 +1,76 @@
+<div class="card" *ngIf="!showupdate">
+    
+    <p-table  [value]="sellerProductList"  [scrollable]="true" scrollHeight="400px" [tableStyle]="{'min-width': '50rem'}">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>ProductName</th>
+                <th>Price</th>
+                <th>Color</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-ProductList >
+            <tr>
+                <td>{{ProductList.productname}}</td>
+                <td>{{ProductList.price}}</td>
+                <td>{{ProductList.color}}</td>
+                <td>{{ProductList.description}}</td>
+                <td><span style="cursor: pointer;" class="pi pi-trash" (click)="delete(ProductList.id)"></span> <span style="padding-left: 10px; cursor: pointer;" class="pi pi-pencil" (click)="openupdate(ProductList.id)"></span></td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+<div class="updatecard" *ngIf="showupdate">
+    <!-- <h1 style="padding-left: 10px; color: green;">{{success}}</h1> -->
+   <form #updateProduct="ngForm" (ngSubmit)="update(updateProduct.value, id)">
+
+       <div class="p-grid p-fluid">
+           <div class="p-col-12 p-md-4">
+               <div class="p-inputgroup">
+                   <span class="p-inputgroup-addon"><i class="pi pi-box"></i></span>
+                   <input type="text" ngModel="{{productname}}" name="productname" style="width: 40px;" pInputText placeholder="ProductName">
+                </div>
+            </div>
+        </div>
+        
+        <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-dollar"></i></span>
+                <input type="number" ngModel="{{price}}" name="price" style="width: 40px;" pInputText placeholder="price">
+            </div>
+        </div>
+    </div>
+    
+    <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-circle-fill"></i></span>
+                <input type="text" ngModel="{{color}}" name="color" style="width: 40px;" pInputText placeholder="Colour">
+            </div>
+        </div>
+    </div>
+    <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-text"></i></span>
+                <textarea ngModel="{{description}}" name="description">
+                    Enter Product description here
+                </textarea>
+            </div>
+        </div>
+    </div>
+    <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-arrows-v"></i></span>
+                <input type="text" ngModel="{{image}}" name="image" style="width: 40px;" pInputText placeholder="Imageurl">
+            </div>
+        </div>
+    </div>
+    <button class="p-inputgroup" pButton type="button" label="Update Product" icon="pi pi-save" (click)="update(updateProduct.value, id)" ></button>
+</form>
+    
+</div>
